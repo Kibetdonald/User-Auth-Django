@@ -106,8 +106,8 @@ DATABASES = {
         # to source the dotenv you use the command source .env
     }
 }
-DATABASES['default'] = dj_database_url.config(
-    conn_max_age=600, ssl_require=True)
+DATABASES['default'] = dj_database_url.parse('postgres://iryvujcbzuctqs:bc294b985378ef482dcaf7740f5ad9f6799d61bc90343dc6d56b17d0f94a7f83@ec2-23-23-128-222.compute-1.amazonaws.com:5432/d91tn1ravr316l', conn_max_age=600)
+    
 # Setting up the email for the system
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
