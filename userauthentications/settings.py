@@ -96,18 +96,18 @@ WSGI_APPLICATION = 'userauthentications.wsgi.application'
 # Database config
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-        # 'ENGINE': 'django.db.backends.postgresql',
-        # 'NAME': os.environ.get('DB_NAME'),
-        # 'USER': os.environ.get('DB_USER'),
-        # 'PASSWORD': os.environ.get('DB_PASSWORD'),
-        # 'HOST': os.environ.get('DB_HOST')
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get('DB_NAME'),
+        'USER': os.environ.get('DB_USER'),
+        'PASSWORD': os.environ.get('DB_PASSWORD'),
+        'HOST': os.environ.get('DB_HOST')
         # to source the dotenv you use the command source .env
     }
 }
-DATABASES['default'] = dj_database_url.parse('postgres://iryvujcbzuctqs:bc294b985378ef482dcaf7740f5ad9f6799d61bc90343dc6d56b17d0f94a7f83@ec2-23-23-128-222.compute-1.amazonaws.com:5432/d91tn1ravr316l', conn_max_age=600)
-    
+# DATABASES['default'] = dj_database_url.parse('postgres://iryvujcbzuctqs:bc294b985378ef482dcaf7740f5ad9f6799d61bc90343dc6d56b17d0f94a7f83@ec2-23-23-128-222.compute-1.amazonaws.com:5432/d91tn1ravr316l', conn_max_age=600)
+
 # Setting up the email for the system
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
