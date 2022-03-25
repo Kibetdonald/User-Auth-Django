@@ -106,10 +106,10 @@ DATABASES = {
         # 'HOST': os.environ.get('DB_HOST')
         # to source the dotenv you use the command source .env
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd3m5p8shcif0jm',
-        'USER': 'omzowsogyauerh',
-        'PASSWORD': '9f2c1630a09f6f99b706907c2394b412a410e3b47cc14c8d863e73adf821ac88',
-        'HOST': 'ec2-3-229-161-70.compute-1.amazonaws.com',
+        'NAME': 'deun0r3esn8602',
+        'USER': 'jbunrjbevlqahc',
+        'PASSWORD': 'fa276dbd77770baa902cff32f9ff747f6cdc0d5698ac82761ddaba58defc3f4d',
+        'HOST': 'ec2-52-201-124-168.compute-1.amazonaws.com',
         'PORT': '5432'
         # to source the dotenv you use the command source .env
     }
